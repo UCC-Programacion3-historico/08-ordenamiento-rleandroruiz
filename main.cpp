@@ -8,7 +8,7 @@ using namespace std;
 int main() {
     string line;
     string *palabras = new string[2014323]();
-    ifstream miArchivo("dic.txt");
+    ifstream miArchivo("../dicc.tct");
     unsigned long indice = 0;
 
     if (miArchivo.is_open()) {
