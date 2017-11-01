@@ -1,9 +1,12 @@
 #ifndef QUICKSORT_H
 #define QUICKSORT_H
-// NO TIENE CASO BASE!!!!!!!!!!!!!
 
 template <class T>
 void quickSort(T *vect, unsigned long inicio, unsigned long fin){
+
+    if(inicio == fin)
+        return;
+
 
     T pivote = vect[inicio];
     unsigned long inf = inicio;
@@ -23,8 +26,8 @@ void quickSort(T *vect, unsigned long inicio, unsigned long fin){
 
     }
 
-//    vect[inicio] = vect[sup];
-//    vect[sup] = pivote;
+    if(sup == 0)
+        return;
 
     quickSort(vect, inicio, sup - 1);
     quickSort(vect, sup - 1, fin);
