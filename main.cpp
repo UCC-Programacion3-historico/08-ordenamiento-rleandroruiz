@@ -4,6 +4,7 @@
 #include "BubbleSort.h"
 #include "QuickSort.h"
 #include "ShellSort.h"
+#include "InterSort.h"
 
 
 using namespace std;
@@ -22,7 +23,8 @@ int main() {
 
 //        bubbleSort<string>(palabras, indice - 1);
 //        quickSort(palabras,0, indice - 1);
-        shellSort(palabras, indice - 1);
+//        shellSort(palabras, indice - 1);
+        interSort(palabras, indice - 1);
 
         for (unsigned long i = 0; i < indice; i++)
             cout << palabras[i] << endl;
